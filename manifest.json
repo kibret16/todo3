@@ -1,0 +1,21 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "TODO 3",
+    "display": "standalone",
+    "short_name": "TODO 3",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "url": "/",
+    "start_url": "/TODO3/",
+    "generated": "true"
+}

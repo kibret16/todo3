@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>TODO </title>
+
+  <link rel='manifest' href='manifest.json'>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="icon" type="image/png" sizes="any" href="icon.png">
+
+</head>
+
+<body id="app">
+
+<div class="container-box">
+  <h1 class="">New Task</h1>
+  <hr>
+  <div class="full-width">
+
+    <form method="post" onsubmit="addTask('task-details')">
+    <div class="full-width">
+      <div class="row">
+        <textarea hidden required id="task-details"></textarea>
+        <div contenteditable onkeyup="copyDivContentToField('task-details-type','task-details')" id="task-details-type" class="full-width input-field bordered task-details font-normal">{Task Name: ______}</div>
+      </div>
+        <div class="row text-center">
+          <input type="submit" class="font-large btn" value="Add task">
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div class="bottom full-width">
+  <div class="full-width text-center">
+    <button id="start-button" class="btn font-large centered" onclick="listTasks()">
+      <b id="taskcount">NO WORK!</b>
+    </button><br>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
